@@ -1,0 +1,29 @@
+CONSIGNES :
+
+- Intégrer un fichier ./www/js/app.js dans le partial scripts
+- Ajout d'une tâche depuis l'input .new-todo
+- Suppression des tâches avec la petite croix à droite .destroy
+- Nombre de tâches terminées en bas à gauche
+- Mettre une tâche en terminée ou non quand on click sur le .toggle
+- Un double-clic sur une tâche non terminée permet de la modifier
+- Activer les filtres (toutes, En cours, Terminées)
+- Supprimer toutes les terminées quand on click sur le .clear-completed
+
+Routes Serveur :
+  - tasks/add
+  - tasks/edit/1
+  - tasks/toggleFinish/1
+  - tasks/delete/1
+  - tasks/deleteFinished
+
+ASTUCES :
+  - jquery se trouve dans ./www/vendor/jquery/
+  - Il y a un data-id dans le li de chaque tâche
+  - Les fonctions du modèles sont déjà définies
+  - Créez une fonction qui met à jour le footer
+    (nombre de tâches restantes et le lien 'Supprimer les terminées')
+    et la lancer à chaque fois que nécessaire.
+  - Le tasksRouteur existe déjà
+  - La vue 'vues/tasks/task.php' contient le li d'une tâche
+  - Une classe 'completed' à coller sur le li
+    existe déjà et permet de barrer la tâche !!!
